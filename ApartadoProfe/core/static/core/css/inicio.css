@@ -1,0 +1,11 @@
+.fondo{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: #3498db;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

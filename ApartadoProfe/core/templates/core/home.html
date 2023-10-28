@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/core/css/bootstrap.min.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="home" class="navbar-brand">RegistAPP</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <h2>Clases Asignadas</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Clases</th>
+                    <th>Secciones</th>
+                    <th>Sala</th>
+                    <th>Iniciar Clase</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cur in curso %}
+                <tr>
+                    <td>{{cur.nombreCurso}}s</td>
+                    <td>{{cur.Seccion}}</td>
+                    <td>{{cur.Sala}}</td>
+                    <td><a href="QR" class="btn btn-primary">Iniciar Clase</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="../../static/core/js/bootstrap.js"></script>
+</html>
