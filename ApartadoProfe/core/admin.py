@@ -4,9 +4,5 @@ from .models import *
 # Register your models here.
 
 
-admin.site.register(Curso)
-admin.site.register(Seccion)
-admin.site.register(Sala)
 admin.site.register(Alumno)
-admin.site.register(Profesor)
-admin.site.register(Carrera)
+admin.site.register(Clase)

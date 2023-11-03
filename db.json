@@ -1,0 +1,55 @@
+{
+    "alumnos": [
+        {
+            "rut": "1111111111-1",
+            "nombre": "AAAAAAA",
+            "apellido": "BBBBBBB",
+            "carrera": "CCCCCC",
+            "porcentaje": 45
+        },
+        {
+            "rut": "2222222222-2",
+            "nombre": "ffffffF",
+            "apellido": "GGGGGGGGGG",
+            "carrera": "XXXXXXXX",
+            "porcentaje": 87
+        },
+        {
+            "rut": "2222222222-2",
+            "nombre": "ffffffF",
+            "apellido": "GGGGGGGGGG",
+            "carrera": "XXXXXXXX",
+            "porcentaje": 87
+        },
+        {
+            "rut": "2222222222-2",
+            "nombre": "ffffffF",
+            "apellido": "GGGGGGGGGG",
+            "carrera": "XXXXXXXX",
+            "porcentaje": 87
+        },
+        {
+            "rut": "2222222222-2",
+            "nombre": "ffffffF",
+            "apellido": "GGGGGGGGGG",
+            "carrera": "XXXXXXXX",
+            "porcentaje": 87
+        },
+        {
+            "rut": "2222222222-2",
+            "nombre": "ffffffF",
+            "apellido": "GGGGGGGGGG",
+            "carrera": "XXXXXXXX",
+            "porcentaje": 87
+        }
+    ],
+
+    "clases":[
+        {
+            "Id": 1,
+            "asignatura": "GGGGGG",
+            "seccion": "HHHHHHHH",
+            "sala": "JJJJJJJ"
+        }
+    ]
+}
