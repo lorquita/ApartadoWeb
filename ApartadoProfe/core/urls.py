@@ -6,5 +6,4 @@ urlpatterns = [
     path('home', home, name='home'),
     path('asistencia', asistencia, name="asistencia"),
     path('PagQR',PagQR,name='PagQR'),
-    
 ]

@@ -4,8 +4,7 @@ from django.contrib.auth.decorators import login_required
 import qrcode
 from io import BytesIO
 from django.http import JsonResponse
-import base64
-from django.views.decorators.csrf import csrf_exempt
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -25,7 +24,3 @@ def asistencia(request):
     alumno=Alumno.objects.all()
     datos={'alumno':alumno}
     return render(request, 'core/asistencia.html',datos)
-
-def qr_data(request):
-    if request.method == 'POST':
-        recived_data = request.POST.get('data')
