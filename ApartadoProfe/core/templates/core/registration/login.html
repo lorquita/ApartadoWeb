@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../static/core/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-form">
+        <h3 class="txt_gris_medio">Acceder</h3>
+        <hr>
+        <div class="login-container">
+            {% if form.errors %}
+                <div class="alert alert-danger"><p>Tu usuario y contraseña no coinciden. Por Favor intente otra vez</p>
+                </div>
+        </div>
+        <form id="form-login" method="post" action="">
+            {% crsf_token %}
+            <div class="w450" id="username">
+                {{form-username}}
+            </div>
+            <div class="w450" id="password">
+                {{form.password}}
+            </div>
+            <button id="btn-registrar" class="btn btn-primary">Iniciar Sesion</button>
+        </form>
+    </div>
+</body>
+<script src="../../../static/core/js/bootstrap.js"></script>
+</html>

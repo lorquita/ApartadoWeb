@@ -23,6 +23,7 @@
                     <tr>
                         <th>Rut</th>
                         <th>Nombre Alunmno</th>
+                        <th>Apellido Alunmno</th>
                         <th>Carrera</th>
                         <th>Asistencia</th>
                     </tr>
@@ -30,9 +31,10 @@
                 <tbody>
                     {% for alu in alumno %}
                     <tr>
-                        <td>{{alu.rutAlumno}}</td>
-                        <td>{{alu.nombreAlumno}}</td>
-                        <td>{{alu.nombreCarrera}}</td>
+                        <td>{{alu.rut}}</td>
+                        <td>{{alu.nombre}}</td>
+                        <td>{{alu.apellido}}</td>
+                        <td>{{alu.carrera}}</td>
                         <td><input type="radio" name="asistencia" id="justificado" value="1"><label for="justificado">Justificado</label>
                             <input type="radio" name="asistencia" id="ausente" value="2" checked><label for="ausente">Ausente</label>
                             <input type="radio" name="asistencia" id="presente" value="3"><label for="presente">Presente</label>
