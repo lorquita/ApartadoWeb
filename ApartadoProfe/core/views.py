@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .models import *
 from django.contrib.auth.decorators import login_required
 import requests
@@ -8,18 +8,7 @@ from django.contrib.auth import authenticate, login
 # Create your views here.
 @login_required
 def inicio(request):
-    if request.method == 'POST':
-        username = request.POST['fre.camposo@duocuc.cl']
-        password = request.POST['JuanitoPerez']
-        user = authenticate(username=username, password=password)
-
-        if user is not None:
-            login(request, user)
-            return redirect('home')
-        else:
-            return render(request, 'core/inicio-sesion.html', {'error': 'Credenciales incorrectas. Inténtelo de nuevo.'})
-    else:
-        return render(request,'core/inicio-sesion.html')
+    return render(request, 'core/inicio-sesion.html')
 
 @login_required
 def home(request):
@@ -45,6 +34,3 @@ def asistencia(request):
 
     return render(request, 'core/asistencia.html',datos)
 
-@login_required
-def login(request):
-    return render(request,'core/registration/login.html')

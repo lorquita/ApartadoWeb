@@ -13,6 +13,11 @@
             <div class="container">
                 <a href="home" class="navbar-brand">RegistAPP</a>
             </div>
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Perfil</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <div class="container mt-5">
@@ -29,7 +34,7 @@
             <tbody>
                 {% for cur in curso %}
                 <tr>
-                    <td>{{cur.asignatura}}s</td>
+                    <td>{{cur.asignatura}}</td>
                     <td>{{cur.seccion}}</td>
                     <td>{{cur.sala}}</td>
                     <td><a href="PagQR" class="btn btn-primary">Iniciar Clase</a></td>

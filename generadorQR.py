@@ -8,10 +8,10 @@ import json
 contenido = '''{
     "Clase": [
         {
-            "Clase": "Programacion Movil",
+            "Clase": "Programacion Java Escritorio",
             "Profe": "Freddy Campos",
             "Seccion": "013D",
-            "Hora": "10:30"
+            "Hora": "8:30"
         }
     ]
 }'''
@@ -31,4 +31,4 @@ qr.make(fit=True)
 imagen = qr.make_image(fill_color="black", back_color="white")
 
 # Guardar el código QR en un archivo
-imagen.save("codigo_qr.png")
+imagen.save("Java.png")
