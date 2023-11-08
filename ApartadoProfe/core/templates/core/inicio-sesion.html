@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/core/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../static/core/css/inicio.css">
+    <script src="../../static/core/js/radiobutton.js"></script>
     <script src="../../static/core/js/validador.js"></script>
     <title>Iniciar Sesión</title>
 </head>
@@ -35,7 +36,18 @@
             </div>
         </div>
     </section>
+    <script>
+        function login(){
+            let user = document.getElementById('username').value;
+            let pass = document.getElementById('password').value;
+
+            if(user=="fre.campos@duocuc.cl" && pass=="JuanitoSimio"){
+                window.location = 'home'; 
+            }else{
+                alert("Usuario Incorrecto");
+            }
+        }
+    </script>
 </body>
 <script src="../../static/core/js/bootstrap.js"></script>
-
 </html>

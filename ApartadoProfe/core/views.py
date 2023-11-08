@@ -1,36 +1,51 @@
 from django.shortcuts import render
 from .models import *
-from django.contrib.auth.decorators import login_required
 import requests
-from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login
 
 # Create your views here.
-@login_required
+
 def inicio(request):
     return render(request, 'core/inicio-sesion.html')
 
-@login_required
-def home(request):
-    cursos=Clase.objects.all()
-    datos={'curso':cursos}
 
-    response = requests.get('http://localhost:3000/clases')
+def home(request):
+    asignaturas=Asignauras.objects.all()
+    datos={'asignaturas':asignaturas}
+
+    response = requests.get('http://localhost:3000/asignaturas')
     datos_json = response.json()
+    datos['datos_json'] = datos_json
 
     return render(request, 'core/home.html', datos)
 
-@login_required
-def PagQR(request):
-    return render(request, 'core/GenerarQR.html')
 
-@login_required
+def clase1(request):
+    return render(request, 'core/Clase1.html')
+
+
 def asistencia(request):
-    alumno=Alumno.objects.all()
+    alumno=AlumnoPM.objects.all()
     datos={'alumno':alumno}
 
-    response = requests.get('http://localhost:3000/alumnos')
+    response = requests.get('http://localhost:3000/alumnos-PM')
     datos_json = response.json()
+
+    datos['datos_json'] = datos_json
 
     return render(request, 'core/asistencia.html',datos)
 
+
+def clase2(request):
+    return render(request, 'core/Clase2.html')
+
+
+def asist2(request):
+    alumno=AlumnoBD.objects.all()
+    datos={'alumno':alumno}
+
+    response = requests.get('http://localhost:3000/alumnos-BD')
+    datos_json = response.json()
+
+    datos['datos_json'] = datos_json
+
+    return render(request, 'core/asistencia2.html', datos)

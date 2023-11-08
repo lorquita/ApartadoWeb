@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/core/css/bootstrap.min.css">
+    <script src="../../static/core/js/validador.js"></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -13,11 +14,9 @@
             <div class="container">
                 <a href="home" class="navbar-brand">RegistAPP</a>
             </div>
-            <ul class="navbar-nav ">
-                <li class="nav-item">
-                    <a class="nav-link" href="">Perfil</a>
-                </li>
-            </ul>
+            <div class="container">
+                <a href="accounts/login/" class="navbar-brand">Cerrar Sesion</a>
+            </div>
         </nav>
     </header>
     <div class="container mt-5">
@@ -32,17 +31,28 @@
                 </tr>
             </thead>
             <tbody>
-                {% for cur in curso %}
+                {% for asi in asignaturas %}
                 <tr>
-                    <td>{{cur.asignatura}}</td>
-                    <td>{{cur.seccion}}</td>
-                    <td>{{cur.sala}}</td>
-                    <td><a href="PagQR" class="btn btn-primary">Iniciar Clase</a></td>
+                    <td>{{asi.nombre}}</td>
+                    <td>{{asi.seccion}}</td>
+                    <td>{{asi.sala}}</td>
+                    <td><button class="btn btn-success" onclick="iniciarClase('{{ asi.id }}')" type="submit">Iniciar Clase</button></td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
+    <script>
+        function iniciarClase(claseId) {
+            if (claseId === 'clase1') {
+                window.location.href = "clase1.html";
+            } else if (claseId === 'clase2') {
+                window.location.href = "clase2.html";
+            } else {
+                console.error('ID de clase no reconocido');
+            }
+        }
+    </script>
 </body>
 <script src="../../static/core/js/bootstrap.js"></script>
 </html>

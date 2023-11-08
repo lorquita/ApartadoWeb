@@ -4,5 +4,6 @@ from .models import *
 # Register your models here.
 
 
-admin.site.register(Alumno)
-admin.site.register(Clase)
+admin.site.register(AlumnoPM)
+admin.site.register(AlumnoBD)
+admin.site.register(Asignauras)
