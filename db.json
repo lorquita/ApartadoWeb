@@ -1,4 +1,11 @@
 {
+    "proferores": [
+        {
+            "rut":"12.123.456-9",
+            "nombre":"Freddy Campos",
+            "titulo":"Ingeniería En Informática"
+        }
+    ],
     "asignaturas": [
         {
             "id": 1,

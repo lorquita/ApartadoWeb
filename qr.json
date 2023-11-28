@@ -5,6 +5,12 @@
             "Profe": "Freddy Campos",
             "Seccion": "013D",
             "Hora": "10:30"
+        },
+        {
+            "Clase": "Programacion Java Escritorio",
+            "Profe": "Freddy Campos",
+            "Seccion": "009D",
+            "Hora": "08:30"
         }
     ]
 }

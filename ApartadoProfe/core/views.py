@@ -1,6 +1,10 @@
 from django.shortcuts import render
 from .models import *
 import requests
+import qrcode
+import qrcode.image.svg
+from io import BytesIO
+import json
 
 # Create your views here.
 
@@ -20,7 +24,16 @@ def home(request):
 
 
 def clase1(request):
-    return render(request, 'core/Clase1.html')
+    context={}
+    
+    if request.method =='POST':
+        print(request.POST.get("qr_text"))
+        factory = qrcode.image.svg.SvgImage
+        img = qrcode.make(request.POST.get("qr_text"), image_factory=factory, box_size=20)
+        stream = BytesIO()
+        img.save(stream)
+        context["svg"] = stream.getvalue().decode().replace("svg:rect", "rect")
+    return render(request, 'core/Clase1.html',context=context)
 
 
 def asistencia(request):
@@ -33,11 +46,6 @@ def asistencia(request):
     datos['datos_json'] = datos_json
 
     return render(request, 'core/asistencia.html',datos)
-
-
-def clase2(request):
-    return render(request, 'core/Clase2.html')
-
 
 def asist2(request):
     alumno=AlumnoBD.objects.all()

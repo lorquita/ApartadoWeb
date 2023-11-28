@@ -25,6 +25,7 @@
         <table class="table table-striped">
             <thead>
                 <tr>
+                    <th>ID Clase</th>
                     <th>Clases</th>
                     <th>Secciones</th>
                     <th>Sala</th>
@@ -34,26 +35,22 @@
             <tbody>
                 {% for asi in asignaturas %}
                 <tr>
+                    <td>{{asi.id}}</td>
                     <td>{{asi.nombre}}</td>
                     <td>{{asi.seccion}}</td>
                     <td>{{asi.sala}}</td>
-                    <td><button class="btn btn-success" onclick="window.location = 'clase1'" type="submit">Iniciar Clase</button></td>
+                    <td><button class="btn btn-success" onclick="enviar()">Iniciar Clase</button></button></td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
-    <script>
-        function iniciarClase(asinombre) {
-            if (asinombre == 'clase1') {
-                window.location = "clase1.html";
-            } else if (asinombre == 'clase2') {
-                window.location = "clase2.html";
-            } else {
-                console.error('ID de clase no reconocido');
-            }
-        }
-    </script>
+
 </body>
+<script>
+    function enviar(){
+        window.location.href='clase1'
+    }
+</script>
 <script src="../../static/core/js/bootstrap.js"></script>
 </html>
