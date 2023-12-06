@@ -1,19 +1,21 @@
-function iniciarclases(claseId) {
-    if (claseId === 'clase1') {
-        window.location.href = "clase1.html";
-    } else if (claseId === 'clase2') {
-        window.location.href = "clase2";
-    } else {
-        console.error('ID de clase no reconocido');
+var profesores = [
+    {
+        "rut": "12.123.456-9",
+        "nombre": "Freddy Campos",
+        "titulo": "Ingeniería En Informática",
+        "correo": "fre.campos@duocuc.cl",
+        "contraseña": "JuanitoSimio"
     }
-}
-function login(){
-    let user = document.getElementById('username').value;
-    let pass = document.getElementById('password').value;
+];
 
-    if(user=="fre.campos@duocuc.cl" && pass=="JuanitoSimio"){
-        window.location = 'home'; 
-    }else{
-        alert("Usuario Incorrecto");
-    }
-}
+var profesoresAlmacenados = localStorage.getItem('profesores');
+var profesoresRecuperados = JSON.parse(profesoresAlmacenados);
+var primerProfesor = profesoresRecuperados[0];
+var correoRecuperado = primerProfesor.correo;
+var contraseñaRecuperada = primerProfesor.contraseña;
+
+console.log('Correo recuperado:', correoRecuperado);
+console.log('Contraseña recuperada:', contraseñaRecuperada);
+
+
+iniciarSesion("fre.campos@duocuc.cl", "JuanitoSimio");

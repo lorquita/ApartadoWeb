@@ -56,7 +56,7 @@ ROOT_URLCONF = 'ApartadoProfe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates','path','to','db.json')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

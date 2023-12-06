@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/core/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../static/core/css/inicio.css">
-    <script src="../../static/core/js/radiobutton.js"></script>
-    <script src="../../static/core/js/validador.js"></script>
     <title>Iniciar Sesión</title>
 </head>
 
@@ -29,36 +27,27 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6" style="background-color: #d3d3d3;">
-                <div class="container mt-4">
+                <form method="post">
+                    {% csrf_token %}
                     <div class="mb-3">
-                        <label for="usarname" class="form-label">Nombre de Usuario</label>
-                        <input type="text" class="form-control" id="username" placeholder="Ingrese su correo">
+                        <label for="Email" class="form-label">Ingrese su Correo</label>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password">
                     </div>
                     <div style="text-align: center;">
-                        <input type="button" class="btn btn-primary" onclick="login()" value="Iniciar Sesion">
+                        <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
                     </div>
-                    <br><br>
-                </div>
+                </form>
             </div>
         </div>
     </section>
-    <script>
-        function login() {
-            let user = document.getElementById('username').value;
-            let pass = document.getElementById('password').value;
-
-            if (user == "fre.campos@duocuc.cl" && pass == "JuanitoSimio") {
-                window.location = 'home';
-            } else {
-                alert("Usuario Incorrecto");
-            }
-        }
-    </script>
 </body>
+<script>
+    
+</script>
 <script src="../../static/core/js/bootstrap.js"></script>
 
 </html>

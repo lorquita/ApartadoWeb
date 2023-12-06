@@ -16,7 +16,7 @@
                 <a href="home" class="navbar-brand">RegistrAPP</a>
             </div>
             <div class="container">
-                <a href="accounts/login/" class="navbar-brand" style="padding-left: 1100px;">Cerrar Sesion</a>
+                <a href="salir">Cerrar Sesion</a>
             </div>
         </nav>
     </header>
@@ -51,6 +51,17 @@
     function enviar(){
         window.location.href='clase1'
     }
+    function mostrarUsuario(usuario){
+        var usuario = document.getElementById('usuario');
+        usuario.innerHTML= "Hola, " + usuario + " | <a href='#' onclick='cerrarSesion()'>Cerrar sesión</a>";
+    }
+    function cerrarSesion(){
+        alert("Sesión cerrada");
+        window.location.href = "inicio-sesion.html";
+    }
+    var usuarioIniciado = "UsuarioEjemplo";
+    console.log(usuarioIniciado);
+    mostrarUsuarioEnNavbar(usuarioIniciado);
 </script>
 <script src="../../static/core/js/bootstrap.js"></script>
 </html>

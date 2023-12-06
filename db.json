@@ -3,7 +3,9 @@
         {
             "rut":"12.123.456-9",
             "nombre":"Freddy Campos",
-            "titulo":"Ingeniería En Informática"
+            "titulo":"Ingeniería En Informática",
+            "correo":"fre.campos@duocuc.cl",
+            "contraseña":"JuanitoSimio"
         }
     ],
     "asignaturas": [
