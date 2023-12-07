@@ -10,10 +10,10 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a href="home" class="navbar-brand">RegistAPP</a>
+                <a href="home" class="navbar-brand">RegistrAPP</a>
             </div>
-            <div class="container">
-                <a href="#" class="navbar-brand" style="padding-left: 1100px;">Cerrar Sesion</a>
+            <div class="navbar-nav ml-auto">
+                <a href="salir" class="navbar-brand">Cerrar Sesion</a>
             </div>
         </nav>
     </header>
@@ -39,11 +39,11 @@
                         <td>{{alu.apellido}}</td>
                         <td>{{alu.carrera}}</td>
                         <td>
-                            <input type="checkbox" name="asistencia" id="justificado_{{ forloop.counter }}" value="1">
+                            <input type="radio" name="asistencia_{{ forloop.counter }}" id="justificado_{{ forloop.counter }}" value="1">
                             <label for="justificado_{{ forloop.counter }}">Justificado</label>
-                            <input type="checkbox" name="asistencia" id="ausente_{{ forloop.counter }}" value="2" checked>
+                            <input type="radio" name="asistencia_{{ forloop.counter }}" id="ausente_{{ forloop.counter }}" value="2" checked>
                             <label for="ausente_{{ forloop.counter }}">Ausente</label>
-                            <input type="checkbox" name="asistencia" id="presente_{{ forloop.counter }}" value="3">
+                            <input type="radio" name="asistencia_{{ forloop.counter }}" id="presente_{{ forloop.counter }}" value="3">
                             <label for="presente_{{ forloop.counter }}">Presente</label>
                         </td>
                     </tr>

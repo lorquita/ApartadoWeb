@@ -7,18 +7,20 @@
     <title>Registro Asistencia</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a href="home" class="navbar-brand">RegistAPP</a>
-        </div>
-        <div class="container">
-            <a href="#" class="navbar-brand" style="padding-left: 1100px;">Cerrar Sesion</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="home" class="navbar-brand">RegistrAPP</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="salir" class="navbar-brand">Cerrar Sesion</a>
+            </div>
+        </nav>
+    </header>
     <div>
         <div class="container mt-5">
-            <h2>Clase Consulta Base de Datos</h2>
-            <a href="clase1" class="btn btn-success">Volver QR</a>
+            <h2>Clase Modelamiento Base de Datos</h2>
+            <a href="clase2" class="btn btn-success">Volver QR</a>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -37,12 +39,13 @@
                         <td>{{alu.apellido}}</td>
                         <td>{{alu.carrera}}</td>
                         <td>
-                            <label><input type="radio" name="asistencia" value="Justificado">Justificado</label>
-                            <label><input type="radio" name="asistencia" value="Ausente">Ausente</label>
-                            <label><input type="radio" name="asistencia" value="Presente">Presente</label>
+                            <input type="radio" name="asistencia_{{ forloop.counter }}" id="justificado_{{ forloop.counter }}" value="1">
+                            <label for="justificado_{{ forloop.counter }}">Justificado</label>
+                            <input type="radio" name="asistencia_{{ forloop.counter }}" id="ausente_{{ forloop.counter }}" value="2" checked>
+                            <label for="ausente_{{ forloop.counter }}">Ausente</label>
+                            <input type="radio" name="asistencia_{{ forloop.counter }}" id="presente_{{ forloop.counter }}" value="3">
+                            <label for="presente_{{ forloop.counter }}">Presente</label>
                         </td>
-                        
-                        <td></td>
                     </tr>
                     {% endfor %}
                 </tbody>

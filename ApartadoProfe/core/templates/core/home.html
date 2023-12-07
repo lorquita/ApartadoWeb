@@ -15,8 +15,8 @@
             <div class="container">
                 <a href="home" class="navbar-brand">RegistrAPP</a>
             </div>
-            <div class="container">
-                <a href="salir">Cerrar Sesion</a>
+            <div class="navbar-nav ml-auto">
+                <a href="salir" class="navbar-brand">Cerrar Sesion</a>
             </div>
         </nav>
     </header>
@@ -39,7 +39,7 @@
                     <td>{{asi.nombre}}</td>
                     <td>{{asi.seccion}}</td>
                     <td>{{asi.sala}}</td>
-                    <td><button class="btn btn-success" onclick="enviar()">Iniciar Clase</button></button></td>
+                    <td><button class="btn btn-success iniciar-clase" data-id="{{ asi.id }}">Iniciar Clase</button></td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -48,20 +48,18 @@
 
 </body>
 <script>
-    function enviar(){
-        window.location.href='clase1'
-    }
-    function mostrarUsuario(usuario){
-        var usuario = document.getElementById('usuario');
-        usuario.innerHTML= "Hola, " + usuario + " | <a href='#' onclick='cerrarSesion()'>Cerrar sesión</a>";
-    }
-    function cerrarSesion(){
-        alert("Sesión cerrada");
-        window.location.href = "inicio-sesion.html";
-    }
-    var usuarioIniciado = "UsuarioEjemplo";
-    console.log(usuarioIniciado);
-    mostrarUsuarioEnNavbar(usuarioIniciado);
+    // Agregar un escuchador de clics a los botones de "Iniciar Clase"
+    document.querySelectorAll('.iniciar-clase').forEach(function(button) {
+        button.addEventListener('click', function() {
+            // Obtener el ID de la clase asociada al botón
+            var claseId = button.getAttribute('data-id');
+            
+            // Construir la URL con el ID de la clase
+            var url = '/clase' + claseId;  // Ajusta la ruta según tu configuración
+            window.location.href = url;  // Redirigir al usuario
+        });
+    });
+</script>
 </script>
 <script src="../../static/core/js/bootstrap.js"></script>
 </html>

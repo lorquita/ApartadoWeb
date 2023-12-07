@@ -1,309 +1,314 @@
 {
-    "proferores": [
-        {
-            "rut":"12.123.456-9",
-            "nombre":"Freddy Campos",
-            "titulo":"Ingeniería En Informática",
-            "correo":"fre.campos@duocuc.cl",
-            "contraseña":"JuanitoSimio"
-        }
-    ],
-    "asignaturas": [
-        {
-            "id": 1,
-            "nombre": "Programación Movil",
-            "seccion": "008D",
-            "sala": "LC-13"
-        },
-        {
-            "id": 2,
-            "nombre": "Modelamiento de Base de Datos",
-            "seccion": "007D",
-            "sala": "LC-9"
-        }
-    ],
-    "alumnos-PM": [
-        {
-            "rut": "19.123.456-7",
-            "nombre": "Juan",
-            "apellido": "Pérez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 85
-        },
-        {
-            "rut": "20.234.567-8",
-            "nombre": "María",
-            "apellido": "González",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 92
-        },
-        {
-            "rut": "19.345.678-9",
-            "nombre": "Pedro",
-            "apellido": "López",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 78
-        },
-        {
-            "rut": "20.456.789-0",
-            "nombre": "Ana",
-            "apellido": "Martínez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 89
-        },
-        {
-            "rut": "19.567.890-1",
-            "nombre": "Luis",
-            "apellido": "Rodríguez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 80
-        },
-        {
-            "rut": "20.678.901-2",
-            "nombre": "Laura",
-            "apellido": "Sánchez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 95
-        },
-        {
-            "rut": "19.789.012-3",
-            "nombre": "Carlos",
-            "apellido": "Pérez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 75
-        },
-        {
-            "rut": "20.890.123-4",
-            "nombre": "José",
-            "apellido": "López",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 88
-        },
-        {
-            "rut": "19.901.234-5",
-            "nombre": "Andrea",
-            "apellido": "Rodríguez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 90
-        },
-        {
-            "rut": "21.012.345-6",
-            "nombre": "Patricia",
-            "apellido": "Sánchez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 79
-        },
-        {
-            "rut": "20.123.456-7",
-            "nombre": "Felipe",
-            "apellido": "González",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 86
-        },
-        {
-            "rut": "19.234.567-8",
-            "nombre": "Marta",
-            "apellido": "Martínez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 82
-        },
-        {
-            "rut": "21.345.678-9",
-            "nombre": "Javier",
-            "apellido": "Pérez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 91
-        },
-        {
-            "rut": "20.456.789-0",
-            "nombre": "Cristina",
-            "apellido": "González",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 77
-        },
-        {
-            "rut": "19.567.890-1",
-            "nombre": "Miguel",
-            "apellido": "López",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 94
-        },
-        {
-            "rut": "21.678.901-2",
-            "nombre": "Isabel",
-            "apellido": "Rodríguez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 75
-        },
-        {
-            "rut": "20.789.012-3",
-            "nombre": "Víctor",
-            "apellido": "Sánchez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 83
-        },
-        {
-            "rut": "19.890.123-4",
-            "nombre": "Natalia",
-            "apellido": "Martínez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 96
-        },
-        {
-            "rut": "21.901.234-5",
-            "nombre": "Eduardo",
-            "apellido": "González",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 76
-        },
-        {
-            "rut": "20.012.345-6",
-            "nombre": "Sofía",
-            "apellido": "López",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 87
-        }
-    ],
-    "alumnos-BD": [
-        {
-            "rut": "19.012.345-6",
-            "nombre": "Roberto",
-            "apellido": "Sánchez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 88
-        },
-        {
-            "rut": "20.123.456-7",
-            "nombre": "Carolina",
-            "apellido": "Martínez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 84
-        },
-        {
-            "rut": "19.234.567-8",
-            "nombre": "Antonio",
-            "apellido": "González",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 89
-        },
-        {
-            "rut": "20.345.678-9",
-            "nombre": "Sandra",
-            "apellido": "Pérez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 91
-        },
-        {
-            "rut": "19.456.789-0",
-            "nombre": "Ricardo",
-            "apellido": "Rodríguez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 77
-        },
-        {
-            "rut": "20.567.890-1",
-            "nombre": "Carmen",
-            "apellido": "López",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 92
-        },
-        {
-            "rut": "19.678.901-2",
-            "nombre": "Fernando",
-            "apellido": "Sánchez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 80
-        },
-        {
-            "rut": "20.789.012-3",
-            "nombre": "Patricio",
-            "apellido": "González",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 86
-        },
-        {
-            "rut": "19.890.123-4",
-            "nombre": "Natalia",
-            "apellido": "Martínez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 95
-        },
-        {
-            "rut": "20.901.234-5",
-            "nombre": "Rosa",
-            "apellido": "Pérez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 79
-        },
-        {
-            "rut": "19.012.345-6",
-            "nombre": "Roberto",
-            "apellido": "Sánchez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 88
-        },
-        {
-            "rut": "20.123.456-7",
-            "nombre": "Carolina",
-            "apellido": "Martínez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 84
-        },
-        {
-            "rut": "19.234.567-8",
-            "nombre": "Antonio",
-            "apellido": "González",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 89
-        },
-        {
-            "rut": "20.345.678-9",
-            "nombre": "Sandra",
-            "apellido": "Pérez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 91
-        },
-        {
-            "rut": "19.456.789-0",
-            "nombre": "Ricardo",
-            "apellido": "Rodríguez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 77
-        },
-        {
-            "rut": "20.567.890-1",
-            "nombre": "Carmen",
-            "apellido": "López",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 92
-        },
-        {
-            "rut": "19.678.901-2",
-            "nombre": "Fernando",
-            "apellido": "Sánchez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 80
-        },
-        {
-            "rut": "20.789.012-3",
-            "nombre": "Patricio",
-            "apellido": "González",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 86
-        },
-        {
-            "rut": "19.890.123-4",
-            "nombre": "Natalia",
-            "apellido": "Martínez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 95
-        },
-        {
-            "rut": "20.901.234-5",
-            "nombre": "Rosa",
-            "apellido": "Pérez",
-            "carrera": "Ingeniería en Informática",
-            "asistencia": 79
-        }
-    ]
+  "profesores": [
+    {
+      "rut": "12.123.456-9",
+      "nombre": "Freddy Campos",
+      "titulo": "Ingeniería En Informática",
+      "correo": "fre.campos@duocuc.cl",
+      "contraseña": "JuanitoSimio"
+    }
+  ]
+  ,
+  "asignaturas": [
+    {
+      "id": 1,
+      "nombre": "Programación Movil",
+      "seccion": "008D",
+      "sala": "LC-13",
+      "hora inicio": "08:30",
+      "hora termino": "10:40"
+    },
+    {
+      "id": 2,
+      "nombre": "Modelamiento de Base de Datos",
+      "seccion": "007D",
+      "sala": "LC-9",
+      "hora inicio": "13:20",
+      "hora termino": "15:40"
+    }
+  ],
+  "alumnos-PM": [
+    {
+      "rut": "19.123.456-7",
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 85
+    },
+    {
+      "rut": "20.234.567-8",
+      "nombre": "María",
+      "apellido": "González",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 92
+    },
+    {
+      "rut": "19.345.678-9",
+      "nombre": "Pedro",
+      "apellido": "López",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 78
+    },
+    {
+      "rut": "20.456.789-0",
+      "nombre": "Ana",
+      "apellido": "Martínez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 89
+    },
+    {
+      "rut": "19.567.890-1",
+      "nombre": "Luis",
+      "apellido": "Rodríguez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 80
+    },
+    {
+      "rut": "20.678.901-2",
+      "nombre": "Laura",
+      "apellido": "Sánchez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 95
+    },
+    {
+      "rut": "19.789.012-3",
+      "nombre": "Carlos",
+      "apellido": "Pérez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 75
+    },
+    {
+      "rut": "20.890.123-4",
+      "nombre": "José",
+      "apellido": "López",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 88
+    },
+    {
+      "rut": "19.901.234-5",
+      "nombre": "Andrea",
+      "apellido": "Rodríguez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 90
+    },
+    {
+      "rut": "21.012.345-6",
+      "nombre": "Patricia",
+      "apellido": "Sánchez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 79
+    },
+    {
+      "rut": "20.123.456-7",
+      "nombre": "Felipe",
+      "apellido": "González",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 86
+    },
+    {
+      "rut": "19.234.567-8",
+      "nombre": "Marta",
+      "apellido": "Martínez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 82
+    },
+    {
+      "rut": "21.345.678-9",
+      "nombre": "Javier",
+      "apellido": "Pérez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 91
+    },
+    {
+      "rut": "20.456.789-0",
+      "nombre": "Cristina",
+      "apellido": "González",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 77
+    },
+    {
+      "rut": "19.567.890-1",
+      "nombre": "Miguel",
+      "apellido": "López",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 94
+    },
+    {
+      "rut": "21.678.901-2",
+      "nombre": "Isabel",
+      "apellido": "Rodríguez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 75
+    },
+    {
+      "rut": "20.789.012-3",
+      "nombre": "Víctor",
+      "apellido": "Sánchez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 83
+    },
+    {
+      "rut": "19.890.123-4",
+      "nombre": "Natalia",
+      "apellido": "Martínez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 96
+    },
+    {
+      "rut": "21.901.234-5",
+      "nombre": "Eduardo",
+      "apellido": "González",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 76
+    },
+    {
+      "rut": "20.012.345-6",
+      "nombre": "Sofía",
+      "apellido": "López",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 87
+    }
+  ],
+  "alumnos-BD": [
+    {
+      "rut": "19.012.345-6",
+      "nombre": "Roberto",
+      "apellido": "Sánchez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 88
+    },
+    {
+      "rut": "20.123.456-7",
+      "nombre": "Carolina",
+      "apellido": "Martínez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 84
+    },
+    {
+      "rut": "19.234.567-8",
+      "nombre": "Antonio",
+      "apellido": "González",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 89
+    },
+    {
+      "rut": "20.345.678-9",
+      "nombre": "Sandra",
+      "apellido": "Pérez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 91
+    },
+    {
+      "rut": "19.456.789-0",
+      "nombre": "Ricardo",
+      "apellido": "Rodríguez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 77
+    },
+    {
+      "rut": "20.567.890-1",
+      "nombre": "Carmen",
+      "apellido": "López",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 92
+    },
+    {
+      "rut": "19.678.901-2",
+      "nombre": "Fernando",
+      "apellido": "Sánchez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 80
+    },
+    {
+      "rut": "20.789.012-3",
+      "nombre": "Patricio",
+      "apellido": "González",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 86
+    },
+    {
+      "rut": "19.890.123-4",
+      "nombre": "Natalia",
+      "apellido": "Martínez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 95
+    },
+    {
+      "rut": "20.901.234-5",
+      "nombre": "Rosa",
+      "apellido": "Pérez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 79
+    },
+    {
+      "rut": "19.012.345-6",
+      "nombre": "Roberto",
+      "apellido": "Sánchez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 88
+    },
+    {
+      "rut": "20.123.456-7",
+      "nombre": "Carolina",
+      "apellido": "Martínez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 84
+    },
+    {
+      "rut": "19.234.567-8",
+      "nombre": "Antonio",
+      "apellido": "González",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 89
+    },
+    {
+      "rut": "20.345.678-9",
+      "nombre": "Sandra",
+      "apellido": "Pérez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 91
+    },
+    {
+      "rut": "19.456.789-0",
+      "nombre": "Ricardo",
+      "apellido": "Rodríguez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 77
+    },
+    {
+      "rut": "20.567.890-1",
+      "nombre": "Carmen",
+      "apellido": "López",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 92
+    },
+    {
+      "rut": "19.678.901-2",
+      "nombre": "Fernando",
+      "apellido": "Sánchez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 80
+    },
+    {
+      "rut": "20.789.012-3",
+      "nombre": "Patricio",
+      "apellido": "González",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 86
+    },
+    {
+      "rut": "19.890.123-4",
+      "nombre": "Natalia",
+      "apellido": "Martínez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 95
+    },
+    {
+      "rut": "20.901.234-5",
+      "nombre": "Rosa",
+      "apellido": "Pérez",
+      "carrera": "Ingeniería en Informática",
+      "asistencia": 79
+    }
+  ]
 }
